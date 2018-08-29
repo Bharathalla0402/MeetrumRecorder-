@@ -33,11 +33,12 @@ class ListOfFileVC: UIViewController ,UITableViewDelegate,UITableViewDataSource 
     var AudioPlayCheck = String()
     var timer1 = Timer()
     var time : Float = 0.0
-    var Durationfile : Float = 0.0
+    var Durationfile : Double = 0.0
     var fileStringUrl:URL?
     
     var x:Int = 1
     var y:Int = 1
+    var xz:Float = 0.0
     var increase:Float = 0.0
     
     let kConstantObj = kConstant()
@@ -112,17 +113,19 @@ class ListOfFileVC: UIViewController ,UITableViewDelegate,UITableViewDataSource 
             self.audioPlayer.prepareToPlay()
             self.audioPlayer.delegate = self
             y = (arrData.last?.fileDuration)!
+            xz = Float((arrData.last?.fileDuration)!)
            // increase = Float(1 / (arrData.last?.fileDuration)!)
           //  x = increase
           //  timer1 = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.autoScroll), userInfo: nil, repeats: true)
             print(increase)
             let duration = (arrData.last?.fileDuration)! % 60
-            Durationfile = Float((arrData.last?.fileDuration)! % 60)
-            UIView.animate(withDuration: TimeInterval(Float(duration)), animations: { () -> Void in
-                self.ProgressView.setProgress(1.0, animated: true)
-               // self.btn_Play.setImage(UIImage(named: "ListPlay"), for: .normal)
-               // self.AudioPlayCheck = "3"
-            })
+            Durationfile = Double(Float((arrData.last?.fileDuration)! % 60))
+          
+//            UIView.animate(withDuration: TimeInterval(Float(duration)), animations: { () -> Void in
+//                self.ProgressView.setProgress(1.0, animated: true)
+//               // self.btn_Play.setImage(UIImage(named: "ListPlay"), for: .normal)
+//               // self.AudioPlayCheck = "3"
+//            })
             self.audioPlayer.play()
             
              timer1 = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.autoScroll), userInfo: nil, repeats: true)
@@ -135,6 +138,7 @@ class ListOfFileVC: UIViewController ,UITableViewDelegate,UITableViewDataSource 
          print(y)
         if x == y
         {
+            increase = 0.0
             timer1.invalidate()
             AudioPlayCheck = "3"
             
@@ -144,6 +148,12 @@ class ListOfFileVC: UIViewController ,UITableViewDelegate,UITableViewDataSource 
         }
         else
         {
+            
+            print(1.0/xz)
+           
+            increase = increase+(Float(1.0/xz))
+         
+            self.ProgressView.setProgress(increase, animated: false)
             self.x += 1
         }
     }
@@ -224,6 +234,7 @@ class ListOfFileVC: UIViewController ,UITableViewDelegate,UITableViewDataSource 
             }else
             {
                 x=1
+                 increase = 0.0
                 AudioPlayIndex = indexPath.row
                 lbl_playFile.text = arrData[indexPath.row].fileRecordedDate
                 AudioPlayView.isHidden = false
@@ -238,18 +249,19 @@ class ListOfFileVC: UIViewController ,UITableViewDelegate,UITableViewDataSource 
                 self.audioPlayer = try AVAudioPlayer(contentsOf: arrData[indexPath.row].fileUrl! as URL)
                 audioPlayer.prepareToPlay()
                 self.audioPlayer.delegate = self
-                y = (arrData.last?.fileDuration)!
+                y = arrData[indexPath.row].fileDuration!
+                xz = Float((y))
               //  increase = Float(1 % (arrData.last?.fileDuration)!)
               //  x = increase
                 let duration = arrData[indexPath.row].fileDuration! % 60
-                Durationfile = Float(arrData[indexPath.row].fileDuration! % 60)
-                UIView.animate(withDuration: TimeInterval(Float(duration)), animations: { () -> Void in
-                    DispatchQueue.main.async {
-                    self.ProgressView.setProgress(1.0, animated: true)
-                      //  self.btn_Play.setImage(UIImage(named: "ListPlay"), for: .normal)
-                     //   self.AudioPlayCheck = "3"
-                    }
-                })
+                Durationfile = Double(Float(arrData[indexPath.row].fileDuration! % 60))
+//                UIView.animate(withDuration: TimeInterval(Float(duration)), animations: { () -> Void in
+//                    DispatchQueue.main.async {
+//                    self.ProgressView.setProgress(1.0, animated: true)
+//                      //  self.btn_Play.setImage(UIImage(named: "ListPlay"), for: .normal)
+//                     //   self.AudioPlayCheck = "3"
+//                    }
+//                })
                 self.audioPlayer.play()
                 AudioPlayCheck = "1"
                 btn_Play.setImage(UIImage(named: "ListPause"), for: .normal)
@@ -358,44 +370,48 @@ class ListOfFileVC: UIViewController ,UITableViewDelegate,UITableViewDataSource 
     {
         if AudioPlayCheck == "1"
         {
-           //  self.audioRecorder.pause()
+            //self.audioRecorder.pause()
+            self.audioPlayer.stop()
             AudioPlayCheck = "2"
             btn_Play.setImage(UIImage(named: "ListPlay"), for: .normal)
             Listtabl.reloadData()
-            
             timer1.invalidate()
         }
         else if AudioPlayCheck == "2"
         {
            // self.audioPlayer.play()
-            x = 1
+           // x = 1
             
             AudioPlayCheck = "1"
             btn_Play.setImage(UIImage(named: "ListPause"), for: .normal)
              Listtabl.reloadData()
             
-            self.ProgressView.setProgress(0.0, animated: true)
+       //     self.ProgressView.setProgress(0.0, animated: true)
             self.audioPlayer = try! AVAudioPlayer(contentsOf: fileStringUrl!)
             self.audioPlayer.prepareToPlay()
             self.audioPlayer.delegate = self
-            UIView.animate(withDuration: TimeInterval(Durationfile), animations: { () -> Void in
-                self.ProgressView.setProgress(1.0, animated: true)
-            })
+//            UIView.animate(withDuration: TimeInterval(Durationfile), animations: { () -> Void in
+//                self.ProgressView.setProgress(1.0, animated: true)
+//            })
             self.audioPlayer.play()
+            
             
             timer1 = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.autoScroll), userInfo: nil, repeats: true)
         }
         else
         {
+             increase = 0.0
             x = 1
+            xz = 0.0
             AudioPlayCheck = "1"
-            
+            xz = Float((Durationfile))
+             self.ProgressView.setProgress(0.0, animated: true)
             self.audioPlayer = try! AVAudioPlayer(contentsOf: fileStringUrl!)
             self.audioPlayer.prepareToPlay()
             self.audioPlayer.delegate = self
-            UIView.animate(withDuration: TimeInterval(Durationfile), animations: { () -> Void in
-                self.ProgressView.setProgress(1.0, animated: true)
-            })
+//            UIView.animate(withDuration: TimeInterval(Durationfile), animations: { () -> Void in
+//                self.ProgressView.setProgress(1.0, animated: true)
+//            })
             self.audioPlayer.play()
            
             Listtabl.reloadData()

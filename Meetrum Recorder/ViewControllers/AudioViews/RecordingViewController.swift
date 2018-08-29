@@ -198,14 +198,14 @@ class RecordingViewController: UIViewController,UICollectionViewDelegate,UIColle
         
      //    Audio Settings
       
-        settings = [
-            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
-            AVSampleRateKey: 12000,
-            AVNumberOfChannelsKey: 1,
-            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
-        ]
-        
-        strAudioformat = ".m4a"
+//        settings = [
+//            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+//            AVSampleRateKey: 12000,
+//            AVNumberOfChannelsKey: 1,
+//            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+//        ]
+//
+//        strAudioformat = ".m4a"
       
         
          print(settings)
