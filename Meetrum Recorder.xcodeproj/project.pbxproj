@@ -7,14 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		215FD7A48F984073697133A1 /* Pods_Meetrum_Recorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8562C5358F03836B148A89A9 /* Pods_Meetrum_Recorder.framework */; };
+		D9361DDD21254505003B5ACD /* VideoRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9361DDC21254505003B5ACD /* VideoRecordingViewController.swift */; };
+		D9361DDF212549B0003B5ACD /* FSVideoCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9361DDE212549AF003B5ACD /* FSVideoCameraView.swift */; };
+		D9361DE121254CA3003B5ACD /* StartVideoRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9361DE021254CA3003B5ACD /* StartVideoRecordingViewController.swift */; };
+		D9361DE32125A075003B5ACD /* VideoUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9361DE22125A075003B5ACD /* VideoUploadViewController.swift */; };
+		D93AAB252135160D00FF3F98 /* KSideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93AAB222135160D00FF3F98 /* KSideMenuVC.swift */; };
+		D93AAB262135160D00FF3F98 /* SidemenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93AAB232135160D00FF3F98 /* SidemenuVC.swift */; };
+		D93AAB272135160D00FF3F98 /* kConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93AAB242135160D00FF3F98 /* kConstant.swift */; };
 		D93C6C2B212294D800AD1D8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93C6C2A212294D800AD1D8A /* AppDelegate.swift */; };
 		D93C6C2D212294D800AD1D8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93C6C2C212294D800AD1D8A /* ViewController.swift */; };
 		D93C6C30212294D800AD1D8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93C6C2E212294D800AD1D8A /* Main.storyboard */; };
 		D93C6C32212294DB00AD1D8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93C6C31212294DB00AD1D8A /* Assets.xcassets */; };
 		D93C6C35212294DB00AD1D8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93C6C33212294DB00AD1D8A /* LaunchScreen.storyboard */; };
+		D93C6C3D2122ADBF00AD1D8A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93C6C3C2122ADBF00AD1D8A /* SettingsViewController.swift */; };
+		D93C6C3F2122DA0500AD1D8A /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93C6C3E2122DA0500AD1D8A /* RecordingViewController.swift */; };
+		D93C6C4121230AC800AD1D8A /* AudioUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93C6C4021230AC800AD1D8A /* AudioUploadViewController.swift */; };
+		D951FD7D212BD94300F7D9EE /* AlertClassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D951FD7C212BD94300F7D9EE /* AlertClassVC.swift */; };
+		D97C53BE212D7DAD002C12FC /* ListOfFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97C53BD212D7DAD002C12FC /* ListOfFiles.swift */; };
+		D99DA3FD2126B89E0032B043 /* VideoPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99DA3FC2126B89E0032B043 /* VideoPlayViewController.swift */; };
+		D9EC9F5C212A9A0C00ACA4C6 /* ListOfFileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EC9F5B212A9A0C00ACA4C6 /* ListOfFileVC.swift */; };
+		D9EC9F60212ACFA100ACA4C6 /* PlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EC9F5F212ACFA000ACA4C6 /* PlayerVC.swift */; };
+		D9EC9F62212AF22D00ACA4C6 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EC9F61212AF22D00ACA4C6 /* SettingsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		148ABA3A4AC71829BBA84A78 /* Pods-Meetrum Recorder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meetrum Recorder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Meetrum Recorder/Pods-Meetrum Recorder.debug.xcconfig"; sourceTree = "<group>"; };
+		30A4B737142FFCABD5ADD5B0 /* Pods-Meetrum Recorder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meetrum Recorder.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meetrum Recorder/Pods-Meetrum Recorder.release.xcconfig"; sourceTree = "<group>"; };
+		8562C5358F03836B148A89A9 /* Pods_Meetrum_Recorder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meetrum_Recorder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9361DDC21254505003B5ACD /* VideoRecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecordingViewController.swift; sourceTree = "<group>"; };
+		D9361DDE212549AF003B5ACD /* FSVideoCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSVideoCameraView.swift; sourceTree = "<group>"; };
+		D9361DE021254CA3003B5ACD /* StartVideoRecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVideoRecordingViewController.swift; sourceTree = "<group>"; };
+		D9361DE22125A075003B5ACD /* VideoUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoUploadViewController.swift; sourceTree = "<group>"; };
+		D93AAB222135160D00FF3F98 /* KSideMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSideMenuVC.swift; sourceTree = "<group>"; };
+		D93AAB232135160D00FF3F98 /* SidemenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidemenuVC.swift; sourceTree = "<group>"; };
+		D93AAB242135160D00FF3F98 /* kConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kConstant.swift; sourceTree = "<group>"; };
 		D93C6C27212294D800AD1D8A /* Meetrum Recorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meetrum Recorder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93C6C2A212294D800AD1D8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D93C6C2C212294D800AD1D8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +49,15 @@
 		D93C6C31212294DB00AD1D8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D93C6C34212294DB00AD1D8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D93C6C36212294DB00AD1D8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D93C6C3C2122ADBF00AD1D8A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D93C6C3E2122DA0500AD1D8A /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
+		D93C6C4021230AC800AD1D8A /* AudioUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUploadViewController.swift; sourceTree = "<group>"; };
+		D951FD7C212BD94300F7D9EE /* AlertClassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertClassVC.swift; sourceTree = "<group>"; };
+		D97C53BD212D7DAD002C12FC /* ListOfFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfFiles.swift; sourceTree = "<group>"; };
+		D99DA3FC2126B89E0032B043 /* VideoPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayViewController.swift; sourceTree = "<group>"; };
+		D9EC9F5B212A9A0C00ACA4C6 /* ListOfFileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfFileVC.swift; sourceTree = "<group>"; };
+		D9EC9F5F212ACFA000ACA4C6 /* PlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerVC.swift; sourceTree = "<group>"; };
+		D9EC9F61212AF22D00ACA4C6 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +65,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				215FD7A48F984073697133A1 /* Pods_Meetrum_Recorder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86151EA73B186805BB867986 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				148ABA3A4AC71829BBA84A78 /* Pods-Meetrum Recorder.debug.xcconfig */,
+				30A4B737142FFCABD5ADD5B0 /* Pods-Meetrum Recorder.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D93AAB21213515E900FF3F98 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				D93AAB232135160D00FF3F98 /* SidemenuVC.swift */,
+				D93AAB242135160D00FF3F98 /* kConstant.swift */,
+				D93AAB222135160D00FF3F98 /* KSideMenuVC.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
 		D93C6C1E212294D800AD1D8A = {
 			isa = PBXGroup;
 			children = (
 				D93C6C29212294D800AD1D8A /* Meetrum Recorder */,
 				D93C6C28212294D800AD1D8A /* Products */,
+				86151EA73B186805BB867986 /* Pods */,
+				F30EF1AB11B343FC56A615B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +112,68 @@
 		D93C6C29212294D800AD1D8A /* Meetrum Recorder */ = {
 			isa = PBXGroup;
 			children = (
+				D951FD7C212BD94300F7D9EE /* AlertClassVC.swift */,
 				D93C6C2A212294D800AD1D8A /* AppDelegate.swift */,
-				D93C6C2C212294D800AD1D8A /* ViewController.swift */,
+				D9EC9F61212AF22D00ACA4C6 /* SettingsModel.swift */,
+				D97C53BD212D7DAD002C12FC /* ListOfFiles.swift */,
+				D9EC9F55212A953000ACA4C6 /* ViewControllers */,
 				D93C6C2E212294D800AD1D8A /* Main.storyboard */,
 				D93C6C31212294DB00AD1D8A /* Assets.xcassets */,
 				D93C6C33212294DB00AD1D8A /* LaunchScreen.storyboard */,
 				D93C6C36212294DB00AD1D8A /* Info.plist */,
+				D9EC9F56212A954900ACA4C6 /* Supporting Files */,
 			);
 			path = "Meetrum Recorder";
+			sourceTree = "<group>";
+		};
+		D9EC9F55212A953000ACA4C6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D93C6C2C212294D800AD1D8A /* ViewController.swift */,
+				D93C6C3C2122ADBF00AD1D8A /* SettingsViewController.swift */,
+				D9EC9F5B212A9A0C00ACA4C6 /* ListOfFileVC.swift */,
+				D9EC9F5F212ACFA000ACA4C6 /* PlayerVC.swift */,
+				D93AAB21213515E900FF3F98 /* SideMenu */,
+				D9EC9F57212A956B00ACA4C6 /* AudioViews */,
+				D9EC9F58212A958E00ACA4C6 /* VideoViews */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D9EC9F56212A954900ACA4C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9361DDE212549AF003B5ACD /* FSVideoCameraView.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9EC9F57212A956B00ACA4C6 /* AudioViews */ = {
+			isa = PBXGroup;
+			children = (
+				D93C6C3E2122DA0500AD1D8A /* RecordingViewController.swift */,
+				D93C6C4021230AC800AD1D8A /* AudioUploadViewController.swift */,
+			);
+			path = AudioViews;
+			sourceTree = "<group>";
+		};
+		D9EC9F58212A958E00ACA4C6 /* VideoViews */ = {
+			isa = PBXGroup;
+			children = (
+				D9361DDC21254505003B5ACD /* VideoRecordingViewController.swift */,
+				D9361DE021254CA3003B5ACD /* StartVideoRecordingViewController.swift */,
+				D99DA3FC2126B89E0032B043 /* VideoPlayViewController.swift */,
+				D9361DE22125A075003B5ACD /* VideoUploadViewController.swift */,
+			);
+			path = VideoViews;
+			sourceTree = "<group>";
+		};
+		F30EF1AB11B343FC56A615B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8562C5358F03836B148A89A9 /* Pods_Meetrum_Recorder.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D93C6C39212294DB00AD1D8A /* Build configuration list for PBXNativeTarget "Meetrum Recorder" */;
 			buildPhases = (
+				40C71CFD5FCCDCC9948A94CB /* [CP] Check Pods Manifest.lock */,
 				D93C6C23212294D800AD1D8A /* Sources */,
 				D93C6C24212294D800AD1D8A /* Frameworks */,
 				D93C6C25212294D800AD1D8A /* Resources */,
+				1B351DC58909D573E3A25B12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +244,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B351DC58909D573E3A25B12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Meetrum Recorder/Pods-Meetrum Recorder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MSCircularSlider/MSCircularSlider.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MSCircularSlider.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Meetrum Recorder/Pods-Meetrum Recorder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40C71CFD5FCCDCC9948A94CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meetrum Recorder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D93C6C23212294D800AD1D8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9361DDD21254505003B5ACD /* VideoRecordingViewController.swift in Sources */,
+				D97C53BE212D7DAD002C12FC /* ListOfFiles.swift in Sources */,
+				D9361DDF212549B0003B5ACD /* FSVideoCameraView.swift in Sources */,
+				D99DA3FD2126B89E0032B043 /* VideoPlayViewController.swift in Sources */,
+				D9EC9F60212ACFA100ACA4C6 /* PlayerVC.swift in Sources */,
+				D93C6C3F2122DA0500AD1D8A /* RecordingViewController.swift in Sources */,
+				D9361DE121254CA3003B5ACD /* StartVideoRecordingViewController.swift in Sources */,
+				D93AAB262135160D00FF3F98 /* SidemenuVC.swift in Sources */,
+				D93C6C4121230AC800AD1D8A /* AudioUploadViewController.swift in Sources */,
 				D93C6C2D212294D800AD1D8A /* ViewController.swift in Sources */,
+				D951FD7D212BD94300F7D9EE /* AlertClassVC.swift in Sources */,
+				D93AAB252135160D00FF3F98 /* KSideMenuVC.swift in Sources */,
+				D9361DE32125A075003B5ACD /* VideoUploadViewController.swift in Sources */,
+				D93AAB272135160D00FF3F98 /* kConstant.swift in Sources */,
 				D93C6C2B212294D800AD1D8A /* AppDelegate.swift in Sources */,
+				D9EC9F5C212A9A0C00ACA4C6 /* ListOfFileVC.swift in Sources */,
+				D93C6C3D2122ADBF00AD1D8A /* SettingsViewController.swift in Sources */,
+				D9EC9F62212AF22D00ACA4C6 /* SettingsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +447,13 @@
 		};
 		D93C6C3A212294DB00AD1D8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148ABA3A4AC71829BBA84A78 /* Pods-Meetrum Recorder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 286BCTD55N;
 				INFOPLIST_FILE = "Meetrum Recorder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +467,13 @@
 		};
 		D93C6C3B212294DB00AD1D8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30A4B737142FFCABD5ADD5B0 /* Pods-Meetrum Recorder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 286BCTD55N;
 				INFOPLIST_FILE = "Meetrum Recorder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
