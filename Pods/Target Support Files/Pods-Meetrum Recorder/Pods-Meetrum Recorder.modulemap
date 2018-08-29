@@ -1,0 +1,6 @@
+framework module Pods_Meetrum_Recorder {
+  umbrella header "Pods-Meetrum Recorder-umbrella.h"
+
+  export *
+  module * { export * }
+}
